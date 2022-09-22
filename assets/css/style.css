@@ -1,26 +1,48 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: bisque;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+    align-items: end;
+    padding: 20px;
     background-color: #8d0f0f;
     color: antiquewhite;
 }
 
 /* Add in styling for h1-h6 */
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-}
-
 nav a {
     color: antiquewhite;
     font-weight: bold;
+}
+
+.hero {
+    background-color: #550000;
+    color: antiquewhite;
+}
+
+.subtitle-heading {
+    display: flex;
+    justify-content: right;
+    padding-right: 15px;
+}
+
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.project-card {
+    width: 25%;
+    min-height: 100px;
+    border: 3px solid black;
+    margin: 2px;
+}
+
+.project-card div {
+    padding: 20px;
 }
