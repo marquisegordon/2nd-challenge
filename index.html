@@ -15,10 +15,12 @@
     <header>
         <h1>Marquise Gordon</h1>
         <nav>
-            <a href="#">About Me</a>
-            <a href="#">Work</a>
-            <a href="#">Contact Info</a>
-            <a href="#">Resume</a>
+            <ul class="menu">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -27,17 +29,20 @@
     </section>
 
     <main>
-        <section>
+        <section id="about-me" class="about-section">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie ac risus in iaculis. Fusce tristique ligula tortor, ac fermentum lectus rutrum id. Donec suscipit nulla diam. Duis sit amet nisl orci. Nulla massa dolor, gravida sed molestie at, aliquam quis leo. Phasellus sit amet elementum justo, id ultricies dui. Maecenas gravida sapien ornare, viverra elit sed, rhoncus sem. Proin sit amet pellentesque dolor. Mauris quis nunc porttitor, posuere tortor at, malesuada metus. Nullam tortor justo, tincidunt eget egestas sed, tempus vitae purus. Cras quis egestas ex, vitae elementum justo. Pellentesque id dui vel eros porttitor ultricies quis ac enim. Ut rutrum orci at tincidunt ullamcorper. Morbi sed enim tortor. Vestibulum lorem diam, volutpat vel fermentum quis, elementum et erat. Vestibulum eu viverra est.</p>
+            <div class="about-me">
+                <img src="./assets/images/marquise.jpeg" width="75" height="150" alt="Piture of developer">
+                <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie ac risus in iaculis. Fusce tristique ligula tortor, ac fermentum lectus rutrum id. Donec suscipit nulla diam. Duis sit amet nisl orci. Nulla massa dolor, gravida sed molestie at, aliquam quis leo. Phasellus sit amet elementum justo, id ultricies dui. Maecenas gravida sapien ornare, viverra elit sed, rhoncus sem. Proin sit amet pellentesque dolor. Mauris quis nunc porttitor, posuere tortor at, malesuada metus. Nullam tortor justo, tincidunt eget egestas sed, tempus vitae purus. Cras quis egestas ex, vitae elementum justo. Pellentesque id dui vel eros porttitor ultricies quis ac enim. Ut rutrum orci at tincidunt ullamcorper. Morbi sed enim tortor. Vestibulum lorem diam, volutpat vel fermentum quis, elementum et erat. Vestibulum eu viverra est.</p>
+            </div>
         </section>
 
-        <section>
+        <section id="work" class="work">
             <h2>Work</h2>
             <section class="project-section">
                 <div class="project-card">
                     <a href="#">
-                        <div>
+                        <div class="work-content">
                             <h3>Project 1</h3>
                             <p>Praesent pretium fringilla metus. Nulla quis condimentum ante.</p>
                         </div>
@@ -45,7 +50,7 @@
                 </div>
                 <div class="project-card">
                     <a href="#">
-                        <div>
+                        <div  class="work-content">
                             <h3>Project 2</h3>
                             <p>Praesent pretium fringilla metus. Nulla quis condimentum ante.</p>
                         </div>
@@ -53,7 +58,7 @@
                 </div>
                 <div class="project-card">
                     <a href="#">
-                        <div>
+                        <div class="work-content">
                             <h3>Project 3</h3>
                             <p>Praesent pretium fringilla metus. Nulla quis condimentum ante.</p>
                         </div>
@@ -62,14 +67,14 @@
             </section>
         </section>
 
-        <section>
+        <section id="contact-me" class="contact-me">
             <h2>Contact Me</h2>
-            <div>
-                <a href="#">Phone</a>
-                <a href="#">Email</a>
-                <a href="#">Github</a>
-                <a href="#">Twitter</a>
-                <a href="#">Spotify</a>
+            <div class="contact-div">
+                <a class="contact-links" href="#">Phone</a>
+                <a class="contact-links" href="#">Email</a>
+                <a class="contact-links" href="#">Github</a>
+                <a class="contact-links" href="#">Twitter</a>
+                <a class="contact-links" href="#">Spotify</a>
             </div>
         </section>
     </main>

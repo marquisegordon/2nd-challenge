@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: bisque;
+    background-color: lightgray;
 }
 
 header {
@@ -13,36 +13,95 @@ header {
     color: antiquewhite;
 }
 
-/* Add in styling for h1-h6 */
-
-nav a {
+li a {
     color: antiquewhite;
     font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
 }
 
 .hero {
-    background-color: #550000;
+    background-image: url(../images/red-banner.jpeg);
     color: antiquewhite;
 }
 
 .subtitle-heading {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     padding-right: 15px;
+}
+
+.about-section {
+    display: flex;
+    background-image: url(../images/red-banner.jpeg);
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    margin-left: 50px;
+    background-color: #730303;
+}
+
+.about-content {
+    margin-left: 10px;
+    text-align: center;
+    background-color: #730303;
+}
+
+.work {
+    display: flex;
+    background-image: url(../images/red-banner.jpeg);
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.work-content {
+    color: antiquewhite;
 }
 
 .project-section {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 50px;
+    color: antiquewhite;
 }
     
 .project-card {
     width: 25%;
     min-height: 100px;
-    border: 3px solid black;
+    border: 3px solid #730303;
     margin: 2px;
 }
 
 .project-card div {
     padding: 20px;
+}
+
+.contact-me {
+    display: flow-root;
+    background-image: url(../images/red-banner.jpeg);
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-links {
+    color: antiquewhite;
+    margin: 15px;
 }
