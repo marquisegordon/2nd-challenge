@@ -18,3 +18,6 @@ The webpage is very simplistic. The navigation bar has some functionality. The n
 - Resume
 
 Once you click on one of the items it takes you to the respected corresponding section of the page.
+
+## Link to webpage
+https://marquisegordon.github.io/portfolio/
