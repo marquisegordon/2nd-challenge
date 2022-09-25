@@ -1,27 +1,53 @@
+:root {
+    --text-color: lavenderblush;
+}
+
+/* Sets styling for whole body */
 body {
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
+    font-family: monospace, sans-serif, serif;
+    background-image: url(../images/multi-color.jpeg);
 }
 
+/* Sets styling for the header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: end;
     padding: 20px;
-    background-color: #8d0f0f;
-    color: antiquewhite;
+    background-image: url(../images/bright-color.jpeg);
+    color: var(--text-color);
 }
 
+/* Sets styling for all h1 elements */
+h1 {
+    font-family: cursive, monospace, sans-serif, serif;
+    font-weight: bolder;
+}
+/* Sets styling for all list a ref */
 li a {
-    color: antiquewhite;
+    color: var(--text-color);
     font-weight: bold;
     text-decoration: none;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
 }
 
+/* Sets styling for all h2 elements */
 h2 {
+    display: flex;
+    align-items: center;
     text-align: center;
+    font-family: cursive, monospace, sans-serif, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+/* Sets styling for all h3 elements */
+h3 {
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
@@ -30,58 +56,71 @@ h2 {
 }
 
 .hero {
-    background-image: url(../images/red-banner.jpeg);
-    color: antiquewhite;
+    background-image: url(../images/marvel.gif);
+    color: var(--text-color);
 }
 
 .subtitle-heading {
-    display: flex;
     justify-content: center;
-    padding-right: 15px;
+    padding: 10px;
 }
 
 .about-section {
     display: flex;
-    background-image: url(../images/red-banner.jpeg);
-    color: antiquewhite;
+    color: var(--text-color);
     padding: 20px;
+}
+
+#h2-bottom-border {
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 4px solid var(--text-color);
+}
+
+.h2-right-border {
+    padding: 30px;
+    border-right: 4px solid lavenderblush;
 }
 
 .about-me {
     display: flex;
     margin-left: 50px;
-    background-color: #730303;
 }
 
 .about-content {
     margin-left: 10px;
     text-align: center;
-    background-color: #730303;
+    font-size: large;
 }
 
 .work {
     display: flex;
-    background-image: url(../images/red-banner.jpeg);
-    color: antiquewhite;
+    color: var(--text-color);
     padding: 20px;
 }
 
 .work-content {
-    color: antiquewhite;
+    color: var(--text-color);
 }
 
 .project-section {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 50px;
-    color: antiquewhite;
+    justify-content: center;
+    color: var(--text-color);
 }
-    
+
 .project-card {
-    width: 25%;
+    width: 37%;
     min-height: 100px;
-    border: 3px solid #730303;
+    border: 3px solid lightgrey;
     margin: 2px;
+}
+
+.project-card p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .project-card div {
@@ -90,9 +129,9 @@ h2 {
 
 .contact-me {
     display: flow-root;
-    background-image: url(../images/red-banner.jpeg);
-    color: antiquewhite;
+    color: var(--text-color);
     padding: 20px;
+    margin-left: 120px;
 }
 
 .contact-div {
@@ -102,6 +141,54 @@ h2 {
 }
 
 .contact-links {
-    color: antiquewhite;
+    color: var(--text-color);
     margin: 15px;
+}
+
+/* Adds background color when hovering over contact links */
+.contact-links:hover{
+    background-color: #ac1515a6;
+    color: var(--text-color);
+}
+
+#work-id {
+    width: 75%;
+}
+
+#project1-id {
+    height: 400px;
+    background-image: url(../images/project1.gif);
+}
+
+#project2-id {
+    background-image: url(../images/project2.gif);
+}
+
+#project3-id {
+    background-image: url(../images/project3.gif);
+}
+
+/* When screen size has smartphone dimensions */
+@media screen and (max-width: 520px) {
+    li {
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* When screen size has tablet dimensions */
+@media screen and (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
 }
