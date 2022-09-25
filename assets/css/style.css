@@ -1,5 +1,5 @@
 :root {
-    --text-color: lavenderblush;
+    --text-color: #b9ffff;
 }
 
 /* Sets styling for whole body */
@@ -187,6 +187,12 @@ h3 {
 
 /* When screen size has tablet dimensions */
 @media screen and (max-width: 768px) {
+    li {
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: underline;
+    }
     .about-me {
         flex-direction: column;
         align-items: center;
