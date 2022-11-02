@@ -157,7 +157,10 @@ h3 {
 
 #project1-id {
     height: 400px;
-    background-image: url(../images/project1.gif);
+    background-image: url(../images/project-1.png);
+    background-size: contain;
+    color: #ec020c;
+    font-weight: bolder;
 }
 
 #project2-id {
